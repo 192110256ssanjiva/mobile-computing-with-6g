@@ -1,0 +1,52 @@
+# Java Myboard.java codes:
+
+package com.example.ex.no4;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.RectF;
+import android.view.View;
+public class MyBoard extends View {
+
+public MyBoard(Context context) {
+super(context);
+// TODO Auto-generated constructor stub
+}
+
+protected void onDraw(Canvas canvas) {
+// TODO Auto-generated method stub
+super.onDraw(canvas);
+Paint paint = new Paint();
+canvas.drawCircle(100, 250, 100, paint);
+canvas.drawRect(250, 50, 400, 250, paint);
+canvas.drawRect(50, 450, 150, 550, paint);
+canvas.drawLine(250, 500, 350, 500, paint);
+canvas.drawOval(new RectF(20, 20, 50, 100), paint);
+}
+}
+
+
+#java code for ex.no4.
+
+
+
+package com.example.ex.no4;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+public class MainActivity extends Activity {
+
+protected void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState);
+setContentView(new MyBoard(this));
+
+}
+
+public boolean onCreateOptionsMenu(Menu menu) {
+// Inflate the menu; this adds items to the action bar if it is present.
+getMenuInflater().inflate(R.menu.main, menu);
+return true;
+}
+}
