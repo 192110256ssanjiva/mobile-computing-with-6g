@@ -1,0 +1,67 @@
+package com.example.mulno11;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class MainActivity extends Activity {
+
+    
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+
+    
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}
+
+
+#other javafile(2)[second codes], alternative progrm.
+import android.support.v7.app.AppCompatActivity; 
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView; 
+import android.widget.Button;
+import android.widget.EditText; 
+import android.widget.Spinner; 
+import android.widget.Toast;
+public class Prac2 extends AppCompatActivity {
+EditText username,password,email,phone,interest,birthdate,birthtime; 
+AutoCompleteTextView country;
+Spinner states; 
+Button submit;
+ArrayAdapter arrayAdapter,arrayAdapter1;
+Mobile Computing and Wireless Communication (2170710)
+ACET(CSE
+)
+Page 9
+String[] Country={"India","Indonesia","Africa","Afghanistan"};
+String[] state={"gujarat","goa","maharashtra","rajsthan","aasam","bihar","west bangol"}; 
+@Override
+protected void onCreate(Bundle savedInstanceState) { 
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_prac6); 
+submit= (Button) findViewById(R.id.regi); 
+states= (Spinner) findViewById(R.id.state);
+country= (AutoCompleteTextView) findViewById(R.id.country);
+arrayAdapter=new ArrayAdapter(Prac6.this,android.R.layout.simple_spinner_item,state); 
+states.setAdapter(arrayAdapter);
+country.setThreshold(1); 
+country.setAdapter(arrayAdapter1); 
+submit.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v) {
+Toast.makeText(Prac2.this, "Registered successfully... ",
+Toast.LENGTH_SHORT).show();
+}
+});
+}
+}
