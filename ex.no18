@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+    "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<card id="index" title="Welcome">
+<p align="center">
+    Juicy Studio<br/>
+    <img src="images/smile.wbmp" alt="Smile" width="20" height="20"/><br/>
+    W@P
+</p>
+</card>
+</wml>
