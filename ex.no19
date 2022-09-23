@@ -1,0 +1,21 @@
+<wml>
+<display>
+<card id="main" title="" ontimer="#main" alerts="on">
+<timer value="50"></timer>
+<p>Baud: $(comm.baud)</p>
+<br/>
+<p>AP: $(wlan.essid)</p>
+<p> </p><br/>
+<p> </p><br/>
+<p> <a href="#system">Firmware</a></p>
+</card>
+<card id="system" title="" ontimer="#main" alerts="on">
+<timer value="50"></timer>
+<p>Firmware:</p><br/>
+<p>$(appl.name)</p><br/>
+<p>ZBI State:</p><br/>
+<p>$(zbi.key)</p><br/>
+<p> <a href="#main">Main</a></p>
+</card>
+</display>
+</wml>
