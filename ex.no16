@@ -1,0 +1,9 @@
+<wml>
+<display>
+<card>
+<p>Baud: $(comm.baud)</p>
+<br/>
+<p>AP: $(wlan.essid)</p>
+</card>
+</display>
+</wml>
